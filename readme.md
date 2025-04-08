@@ -108,3 +108,40 @@ print(merge_intervals([[1,3]]))
 ```bash
 python exe2.py
 ```
+
+## Exercise 3: Word Ladder (Escada de Palavras)
+
+### Problem Statement
+
+Find the length of the shortest transformation sequence from `initialWord` to `finalWord` where:
+
+1. Only one letter can be changed at a time
+2. Each intermediate word must exist in `wordList`
+3. Return 0 if no such sequence exists
+
+### Test Cases
+
+```bash
+# Standard case (path exists)
+print(ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"]))
+# Output: 5 ("hit"→"hot"→"dot"→"dog"→"cog")
+
+# No possible path
+print(ladderLength("hit", "cog", ["hot","dot","dog","lot","log"]))
+# Output: 0
+
+# Immediate transformation
+print(ladderLength("hot", "dot", ["dot","cot"]))
+# Output: 2 ("hot"→"dot")
+
+# Same start and end word
+print(ladderLength("hot", "hot", ["hot"]))
+# Output: 1
+
+```
+
+### How to Run
+
+```bash
+python exe3.py
+```
